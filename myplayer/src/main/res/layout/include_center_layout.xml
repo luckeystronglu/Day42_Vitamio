@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 缓冲布局 -->
+    <LinearLayout
+        android:id="@+id/view_center_buffer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/view_center_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/view_center_jd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:text="50%"/>
+
+    </LinearLayout>
+
+    <!-- 控制声音 -->
+    <LinearLayout
+        android:id="@+id/view_sound_layout"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@drawable/shape_center_layout">
+
+
+        <ImageView
+            android:id="@+id/view_sound_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_volume_up_white_36dp"/>
+
+        <TextView
+            android:id="@+id/view_sound_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:text="50%"/>
+
+    </LinearLayout>
+
+
+    <!-- 控制亮度 -->
+    <LinearLayout
+        android:id="@+id/view_light_layout"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@drawable/shape_center_layout">
+
+
+        <ImageView
+            android:id="@+id/view_light_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_brightness_6_white_36dp"/>
+
+        <TextView
+            android:id="@+id/view_light_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:text="50%"/>
+
+    </LinearLayout>
+
+</FrameLayout>
